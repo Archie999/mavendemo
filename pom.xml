@@ -49,7 +49,7 @@
                 <version>2.5.3</version>
                 <configuration>
                     <username>Archie999</username>
-                    <password>2450545290LZq</password>
+                    <password>*********</password>
                     <goals>-f pom.xml deploy</goals>
                 </configuration>
             </plugin>
