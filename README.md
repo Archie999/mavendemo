@@ -39,8 +39,10 @@ mvn test:defalut生命周期阶段
 
 
 **mvn常用指令**
-mvn编译: mvn clean compile
+mvn编译: mvn clean compile 
+
 mvn执行测试: mvn clean test
+mvn生成骨架项目:mvn archetype:generte
 mvn打包: mvn clean package
 mvn INSTALL: mvn clean install
 mvn 解析依赖:mvn dependency:list
@@ -55,3 +57,10 @@ scope介绍:指的是当前依赖的范围
   provided:已提供依赖范围,对于编译和测试有效,但是运行时无效
   runtime：运行时依赖范围,对于测试和运行都有效,但是编译主代码时无效
   system:系统依赖范围,通常是指定本地依赖地址
+  
+
+mvn 版本发布
+mvn release:prepare 准备版本发布
+mvn release:rollback回退版本
+mvn release:perform 生成源代码并且构建到仓库
+
