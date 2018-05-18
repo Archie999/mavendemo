@@ -60,17 +60,7 @@
         <tag>HEAD</tag>
     </scm>
 	
-	<profiles>
-        <profile>
-            <id>disable-javadoc-doclint</id>
-            <activation>
-                <jdk>[1.8,)</jdk>
-            </activation>
-            <properties>
-                <javadoc.opts>-Xdoclint:none</javadoc.opts>
-            </properties>
-        </profile>
-    </profiles>
+	
 
 
     <!-- 编译使用apache maven 编译-->
@@ -99,18 +89,7 @@
                 <configuration>
                     <tagBase>https://github.com/Archie999/mavendemo/tags</tagBase>
                 </configuration>
-				<executions>
-                    <execution>
-                        <id>attach-javadocs</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>jar</goal>
-                        </goals>
-                        <configuration>
-                            <additionalparam>${javadoc.opts}</additionalparam>
-                        </configuration>
-                    </execution>
-                </executions>
+			
             </plugin>
 
         </plugins>
